@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamy Surprise 🌙</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <div class="sky">
+    <div class="stars"></div>
+    <div class="moon"></div>
+  </div>
+
+  <div class="container">
+    <div class="message">
+      <h1 id="typed"></h1>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const typed = new Typed("#typed", {
+      strings: [
+        "Hey there!",
+       
+        "We've only been talking for a few days, but it feels so dreamy!...",
+       
+        "I'm just really glad that we've finally become friends! 😊"
+      ],
+      typeSpeed: 40,
+      backSpeed: 20,
+      fadeOut: true,
+      loop: false
+    });
+  </script>
+</body>
+</html>
